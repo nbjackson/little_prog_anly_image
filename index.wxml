@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="image-container">
+    <image src="{{selectedImage}}" mode="aspectFit" class="main-image"></image>
+  </view>
+  
+  <view class="button-group">
+    <button class="action-button" bindtap="chooseImage">
+      <text class="iconfont icon-photo"></text>选择图片
+    </button>
+    <button class="action-button" bindtap="analyzeImage">
+      <text class="iconfont icon-analyze"></text>分析图片
+    </button>
+    <button class="action-button" bindtap="generateSimilarImage">
+      <text class="iconfont icon-copy"></text>复刻图片
+    </button>
+    <button class="action-button" bindtap="generateCartoonImage">
+      <text class="iconfont icon-cartoon"></text>卡通化图片
+    </button>
+    <button class="action-button" bindtap="downloadImage">
+      <text class="iconfont icon-download"></text>下载图片
+    </button>
+  </view>
+  
+  <view class="analysis-result">
+    <text class="result-title">分析结果：</text>
+    <text class="result-content">{{analysisResult}}</text>
+  </view>
+  
+  <view class="generated-image-container">
+    <image src="{{generatedImage}}" mode="aspectFit" class="generated-image"></image>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('your-icon-font-url.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 定义具体图标 */
+.icon-photo:before { content: "\e600"; }
+.icon-analyze:before { content: "\e601"; }
+.icon-copy:before { content: "\e602"; }
+.icon-cartoon:before { content: "\e603"; }
+.icon-download:before { content: "\e604"; }

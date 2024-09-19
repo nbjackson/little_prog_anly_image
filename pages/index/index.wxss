@@ -1,0 +1,22 @@
+.container {
+  padding: 20rpx;
+}
+
+.section {
+  margin-bottom: 20rpx;
+}
+
+button {
+  margin-bottom: 10rpx;
+}
+
+image {
+  width: 100%;
+  max-height: 400rpx;
+  margin: 10rpx 0;
+}
+
+text {
+  display: block;
+  margin: 10rpx 0;
+}

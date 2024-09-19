@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="section">
+    <button bindtap="chooseImage">选择图片</button>
+    <image wx:if="{{selectedImage}}" src="{{selectedImage}}" mode="aspectFit"></image>
+  </view>
+
+  <view class="section">
+    <button bindtap="analyzeImage">分析图片</button>
+    <text wx:if="{{analysisResult}}">{{analysisResult}}</text>
+  </view>
+
+  <view class="section">
+    <button bindtap="generateSimilarImage">生成相似图片</button>
+    <button bindtap="generateCartoonImage">生成卡通图片</button>
+    <image wx:if="{{generatedImage}}" src="{{generatedImage}}" mode="aspectFit"></image>
+  </view>
+
+  <view class="section">
+    <button bindtap="downloadImage">下载生成的图片</button>
+  </view>
+</view>
